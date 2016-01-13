@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+	<data>
+        <record model="ir.ui.view" id="project__new_fields_form">
+           <field name="name">project_new_fields_form</field>
+            <field name="model">project.project</field>
+            <field name="inherit_id" ref="project.edit_project"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="before">
+                    <field name="project_description" placeholder="Write here the description of the project ..."/>
+                </xpath>
+                <page string="Other Info" position="after">
+                    <page string="Attachments">
+                        <field name="attachments_ids" widget="many2many_binary" string="Attach a file"/>
+                    </page>
+                </page>
+            </field>
+        </record>
+
+    </data>
+</openerp>
