@@ -9,11 +9,11 @@
                 <xpath expr="//notebook" position="before">
                     <field name="project_description" placeholder="Write here the description of the project ..."/>
                 </xpath>
-                <page string="Other Info" position="after">
+                <xpath expr="//notebook[last()]" position="inside">
                     <page string="Attachments">
                         <field name="attachments_ids" widget="many2many_binary" string="Attach a file"/>
                     </page>
-                </page>
+                </xpath>
             </field>
         </record>
 
