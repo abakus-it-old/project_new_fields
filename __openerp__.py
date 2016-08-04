@@ -10,9 +10,11 @@
 New fields on Projects
 
 Adds new fields on projects:
-
 - 'description' Text
 - 'attachments'
+
+It also adds a menu item from the top menu to directly access a list of projects.
+
 This module has been developed by Valentin THIRION @ AbAKUS it-solutions.
     """,
     'data': [

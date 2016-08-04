@@ -17,5 +17,13 @@
             </field>
         </record>
 
+        <record model="ir.actions.act_window" id="action_list_of_projects">
+            <field name="name">List of projects</field>
+            <field name="res_model">project.project</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="project_list_of_projects" name="List of projects" parent="base.menu_main_pm" action="action_list_of_projects"/>
     </data>
 </openerp>
